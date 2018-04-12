@@ -30,17 +30,18 @@ class BlogPostDAO:
     def __init__(self, database):
         self.db = database
         self.posts = database.posts
+        self.post_count = self.posts.count()
 
     # inserts the blog entry and returns a permalink for the entry
     def insert_entry(self, title, post, tags_array, author):
         print "inserting blog entry", title, post
 
         # fix up the permalink to not include whitespace
-
+        self.post_count += 1
         exp = re.compile('\W')  # match anything not alphanumeric
         whitespace = re.compile('\s')
         temp_title = whitespace.sub("_", title)
-        permalink = exp.sub('', temp_title)
+        permalink = str(self.post_count) + '_' + exp.sub('', repr(temp_title))
 
         # Build a new post
         post = {"title": title,
