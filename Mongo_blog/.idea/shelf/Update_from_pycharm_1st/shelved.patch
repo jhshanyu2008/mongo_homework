@@ -1,0 +1,296 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"6e5197b2-f5e5-4e0d-b57f-5ec81add7352\" name=\"Default\" comment=\"Update from pycharm\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"EXCLUDED_CONVERTED_TO_IGNORED\" value=\"true\" />\n    <option name=\"TRACKING_ENABLED\" value=\"true\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileEditorManager\">\n    <splitter split-orientation=\"horizontal\" split-proportion=\"0.5322581\">\n      <split-first>\n        <leaf SIDE_TABS_SIZE_LIMIT_KEY=\"375\">\n          <file leaf-file-name=\"sessionDAO.py\" pinned=\"false\" current-in-tab=\"false\">\n            <entry file=\"file://$PROJECT_DIR$/sessionDAO.py\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"414\">\n                  <caret line=\"25\" selection-start-line=\"25\" selection-end-line=\"25\" />\n                </state>\n              </provider>\n            </entry>\n          </file>\n          <file leaf-file-name=\"blog.py\" pinned=\"false\" current-in-tab=\"true\">\n            <entry file=\"file://$PROJECT_DIR$/blog.py\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"432\">\n                  <caret line=\"40\" column=\"17\" lean-forward=\"true\" selection-start-line=\"40\" selection-start-column=\"17\" selection-end-line=\"40\" selection-end-column=\"17\" />\n                  <folding>\n                    <element signature=\"n#!!doc\" />\n                    <element signature=\"e#626#640#0\" expanded=\"true\" />\n                    <element signature=\"e#3524#4050#0\" />\n                    <element signature=\"e#4152#5329#0\" />\n                    <element signature=\"e#6116#7174#0\" />\n                    <element signature=\"e#7388#7546#0\" />\n                    <element signature=\"e#7618#8617#0\" />\n                    <element signature=\"e#8671#9058#0\" />\n                    <element signature=\"e#9286#10109#0\" />\n                  </folding>\n                </state>\n              </provider>\n            </entry>\n          </file>\n        </leaf>\n      </split-first>\n      <split-second>\n        <leaf SIDE_TABS_SIZE_LIMIT_KEY=\"375\">\n          <file leaf-file-name=\"blog_login.html\" pinned=\"false\" current-in-tab=\"true\">\n            <entry file=\"file://$PROJECT_DIR$/template/blog_login.html\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"144\">\n                  <caret line=\"8\" column=\"12\" lean-forward=\"true\" selection-start-line=\"8\" selection-start-column=\"12\" selection-end-line=\"8\" selection-end-column=\"12\" />\n                </state>\n              </provider>\n            </entry>\n          </file>\n          <file leaf-file-name=\"remove_lower_score.py\" pinned=\"false\" current-in-tab=\"false\">\n            <entry file=\"file://$PROJECT_DIR$/example/remove_lower_score.py\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"198\">\n                  <caret line=\"11\" selection-start-line=\"11\" selection-end-line=\"11\" />\n                </state>\n              </provider>\n            </entry>\n          </file>\n          <file leaf-file-name=\"remove_student_data.py\" pinned=\"false\" current-in-tab=\"false\">\n            <entry file=\"file://$PROJECT_DIR$/example/remove_student_data.py\">\n              <provider selected=\"true\" editor-type-id=\"text-editor\">\n                <state relative-caret-position=\"143\">\n                  <caret line=\"10\" column=\"39\" selection-start-line=\"10\" selection-start-column=\"39\" selection-end-line=\"10\" selection-end-column=\"39\" />\n                </state>\n              </provider>\n            </entry>\n          </file>\n        </leaf>\n      </split-second>\n    </splitter>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"HTML File\" />\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"PUSH_AUTO_UPDATE\" value=\"true\" />\n    <option name=\"ROOT_SYNC\" value=\"DONT_SYNC\" />\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\n    <favorite-branches>\n      <branch-storage>\n        <map>\n          <entry type=\"REMOTE\">\n            <value>\n              <list>\n                <branch-info repo=\"$PROJECT_DIR$/..\" source=\"mongo/master\" />\n              </list>\n            </value>\n          </entry>\n        </map>\n      </branch-storage>\n    </favorite-branches>\n    <excluded-from-favorite>\n      <branch-storage>\n        <map>\n          <entry type=\"LOCAL\">\n            <value>\n              <list>\n                <branch-info repo=\"$PROJECT_DIR$/..\" source=\"master\" />\n              </list>\n            </value>\n          </entry>\n        </map>\n      </branch-storage>\n    </excluded-from-favorite>\n  </component>\n  <component name=\"IdeDocumentHistory\">\n    <option name=\"CHANGED_PATHS\">\n      <list>\n        <option value=\"$PROJECT_DIR$/pymongo_test.py\" />\n        <option value=\"$PROJECT_DIR$/hello__m101p_525584dce2d4231cc608403f.py\" />\n        <option value=\"$PROJECT_DIR$/bottle_hello.py\" />\n        <option value=\"$PROJECT_DIR$/template/fruit_selected.html\" />\n        <option value=\"$PROJECT_DIR$/template/hello world.html\" />\n        <option value=\"$PROJECT_DIR$/M101/hw1-3.py\" />\n        <option value=\"$PROJECT_DIR$/read_reddit.py\" />\n        <option value=\"$PROJECT_DIR$/using_regex.py\" />\n        <option value=\"$PROJECT_DIR$/using_insert_many.py\" />\n        <option value=\"$PROJECT_DIR$/using_update.py\" />\n        <option value=\"$PROJECT_DIR$/using_replace_one.py\" />\n        <option value=\"$PROJECT_DIR$/using_upsert.py\" />\n        <option value=\"$PROJECT_DIR$/remove_student_data.py\" />\n        <option value=\"$PROJECT_DIR$/using_find_and_modify.py\" />\n        <option value=\"$PROJECT_DIR$/example.py\" />\n        <option value=\"$PROJECT_DIR$/find_using_gt_lt.py\" />\n        <option value=\"$PROJECT_DIR$/test.py\" />\n        <option value=\"$PROJECT_DIR$/views/blog_template.html\" />\n        <option value=\"$PROJECT_DIR$/pymongo_hello.py\" />\n        <option value=\"$PROJECT_DIR$/template/blog_signup.html\" />\n        <option value=\"$PROJECT_DIR$/userDAO.py\" />\n        <option value=\"$PROJECT_DIR$/example/using_find_and_modify.py\" />\n        <option value=\"$PROJECT_DIR$/example/using_gridfs.py\" />\n        <option value=\"$PROJECT_DIR$/example/remove_lower_score.py\" />\n        <option value=\"$PROJECT_DIR$/template/blog_main.html\" />\n        <option value=\"$PROJECT_DIR$/blog.py\" />\n        <option value=\"$PROJECT_DIR$/template/blog_entry.html\" />\n        <option value=\"$PROJECT_DIR$/template/blog_newpost.html\" />\n        <option value=\"$PROJECT_DIR$/blogPostDAO.py\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"ProjectFrameBounds\" extendedState=\"6\">\n    <option name=\"x\" value=\"53\" />\n    <option name=\"y\" value=\"-4\" />\n    <option name=\"width\" value=\"1867\" />\n    <option name=\"height\" value=\"1084\" />\n  </component>\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <OptionsSetting value=\"false\" id=\"Update\" />\n  </component>\n  <component name=\"ProjectView\">\n    <navigator proportions=\"\" version=\"1\">\n      <foldersAlwaysOnTop value=\"true\" />\n    </navigator>\n    <panes>\n      <pane id=\"ProjectPane\">\n        <subPane>\n          <expand>\n            <path>\n              <item name=\"Mongo_blog\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"Mongo_blog\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n          </expand>\n          <select />\n        </subPane>\n      </pane>\n      <pane id=\"Scope\" />\n    </panes>\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\n    <property name=\"last_opened_file_path\" value=\"$USER_HOME$/anaconda3/envs/python35/bin\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"vcs.Git\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$\" />\n      <recent name=\"$PROJECT_DIR$/template\" />\n      <recent name=\"C:\\Users\\jhsha\\Documents\\PyCharmWorkFiles\\Mongo_blog\" />\n      <recent name=\"C:\\Users\\jhsha\\Documents\\PyCharmWorkFiles\\Mongo_blog\\M101\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\jhsha\\Documents\\GitHubWorkFiles\\mongo_homework\\Mongo_blog\\example\" />\n      <recent name=\"C:\\Users\\jhsha\\Documents\\GitHubWorkFiles\\mongo_homework\\Mongo_blog\" />\n      <recent name=\"$PROJECT_DIR$/test\" />\n      <recent name=\"$PROJECT_DIR$/example\" />\n      <recent name=\"C:\\Users\\jhsha\\Documents\\PyCharmWorkFiles\\Mongo_blog\\example\" />\n    </key>\n  </component>\n  <component name=\"RunDashboard\">\n    <option name=\"ruleStates\">\n      <list>\n        <RuleState>\n          <option name=\"name\" value=\"ConfigurationTypeDashboardGroupingRule\" />\n        </RuleState>\n        <RuleState>\n          <option name=\"name\" value=\"StatusDashboardGroupingRule\" />\n        </RuleState>\n      </list>\n    </option>\n  </component>\n  <component name=\"RunManager\" selected=\"Python.blog\">\n    <configuration name=\"blog\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <module name=\"Mongo_blog\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/blog.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n    </configuration>\n    <configuration name=\"blogPostDAO\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <module name=\"Mongo_blog\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/blogPostDAO.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n    </configuration>\n    <configuration name=\"remove_lower_score\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <module name=\"Mongo_blog\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/example\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/example/remove_lower_score.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n    </configuration>\n    <configuration name=\"validate (2)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <module name=\"Mongo_blog\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"C:\\Users\\jhsha\\Documents\\GitHubWorkFiles\\mongo_homework\\Mongo_blog\\example\\validate_02.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n    </configuration>\n    <configuration name=\"validate\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\">\n      <module name=\"Mongo_blog\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <option name=\"SCRIPT_NAME\" value=\"C:\\Users\\jhsha\\Documents\\PyCharmWorkFiles\\Mongo_blog\\example\\validate.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n    </configuration>\n    <list>\n      <item itemvalue=\"Python.blog\" />\n      <item itemvalue=\"Python.validate\" />\n      <item itemvalue=\"Python.remove_lower_score\" />\n      <item itemvalue=\"Python.validate (2)\" />\n      <item itemvalue=\"Python.blogPostDAO\" />\n    </list>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Python.blog\" />\n        <item itemvalue=\"Python.blogPostDAO\" />\n        <item itemvalue=\"Python.validate (2)\" />\n        <item itemvalue=\"Python.remove_lower_score\" />\n        <item itemvalue=\"Python.validate\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration>$USER_HOME$/.subversion</configuration>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"6e5197b2-f5e5-4e0d-b57f-5ec81add7352\" name=\"Default\" comment=\"\" />\n      <created>1522063317532</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1522063317532</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Update from pycharm\">\n      <created>1525175461905</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1525175461905</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"ToolWindowManager\">\n    <frame x=\"53\" y=\"-4\" width=\"1867\" height=\"1084\" extended-state=\"6\" />\n    <editor active=\"true\" />\n    <layout>\n      <window_info content_ui=\"combo\" id=\"Project\" order=\"0\" visible=\"true\" weight=\"0.15747188\" />\n      <window_info anchor=\"bottom\" id=\"TODO\" order=\"6\" />\n      <window_info anchor=\"bottom\" id=\"Event Log\" order=\"7\" side_tool=\"true\" weight=\"0.32955715\" />\n      <window_info anchor=\"bottom\" id=\"Version Control\" order=\"7\" weight=\"0.32955715\" />\n      <window_info anchor=\"bottom\" id=\"Python Console\" order=\"7\" weight=\"0.32901832\" />\n      <window_info anchor=\"bottom\" id=\"Run\" order=\"2\" weight=\"0.46343976\" />\n      <window_info id=\"Structure\" order=\"1\" side_tool=\"true\" weight=\"0.25\" />\n      <window_info anchor=\"bottom\" id=\"Terminal\" order=\"7\" />\n      <window_info id=\"Favorites\" order=\"2\" side_tool=\"true\" />\n      <window_info anchor=\"bottom\" id=\"Debug\" order=\"3\" weight=\"0.46709818\" />\n      <window_info anchor=\"right\" content_ui=\"combo\" id=\"Hierarchy\" order=\"2\" weight=\"0.25\" />\n      <window_info anchor=\"right\" id=\"Commander\" order=\"0\" weight=\"0.4\" />\n      <window_info anchor=\"right\" id=\"Ant Build\" order=\"1\" weight=\"0.25\" />\n      <window_info anchor=\"bottom\" id=\"Message\" order=\"0\" />\n      <window_info anchor=\"bottom\" id=\"Inspection\" order=\"5\" weight=\"0.4\" />\n      <window_info anchor=\"bottom\" id=\"Cvs\" order=\"4\" weight=\"0.25\" />\n      <window_info anchor=\"bottom\" id=\"Find\" order=\"1\" />\n    </layout>\n  </component>\n  <component name=\"UnknownFeatures\">\n    <option featureType=\"com.intellij.fileTypeFactory\" implementationName=\"*.tpl\" />\n  </component>\n  <component name=\"VcsContentAnnotationSettings\">\n    <option name=\"myLimit\" value=\"2678400000\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <ignored-roots>\n      <path value=\"$PROJECT_DIR$\" />\n    </ignored-roots>\n    <MESSAGE value=\"Update from pycharm\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Update from pycharm\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <option name=\"time\" value=\"15\" />\n    </breakpoint-manager>\n  </component>\n  <component name=\"editorHistoryManager\">\n    <entry file=\"file://$PROJECT_DIR$/template/blog_main.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"88\">\n          <caret line=\"4\" column=\"15\" selection-start-line=\"4\" selection-start-column=\"15\" selection-end-line=\"4\" selection-end-column=\"15\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/template/blog_newpost.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"242\">\n          <caret line=\"11\" column=\"25\" selection-start-line=\"11\" selection-start-column=\"25\" selection-end-line=\"11\" selection-end-column=\"25\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/test/bottle_hello.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"176\">\n          <caret line=\"8\" column=\"32\" selection-start-line=\"8\" selection-start-column=\"32\" selection-end-line=\"8\" selection-end-column=\"32\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/pymongo_hello.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"242\">\n          <caret line=\"12\" column=\"45\" lean-forward=\"true\" selection-start-line=\"12\" selection-start-column=\"45\" selection-end-line=\"12\" selection-end-column=\"45\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/test/bottle_hello.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"176\">\n          <caret line=\"8\" column=\"32\" selection-start-line=\"8\" selection-start-column=\"32\" selection-end-line=\"8\" selection-end-column=\"32\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/pymongo_hello.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"88\">\n          <caret line=\"5\" column=\"14\" selection-start-line=\"5\" selection-start-column=\"14\" selection-end-line=\"5\" selection-end-column=\"14\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/test/bottle_hello.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"176\">\n          <caret line=\"8\" column=\"32\" selection-start-line=\"8\" selection-start-column=\"32\" selection-end-line=\"8\" selection-end-column=\"32\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/pymongo_hello.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"88\">\n          <caret line=\"5\" column=\"14\" lean-forward=\"true\" selection-start-line=\"5\" selection-start-column=\"14\" selection-end-line=\"5\" selection-end-column=\"14\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/test/bottle_hello.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"176\">\n          <caret line=\"8\" column=\"32\" selection-start-line=\"8\" selection-start-column=\"32\" selection-end-line=\"8\" selection-end-column=\"32\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/pymongo_hello.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"462\">\n          <caret line=\"22\" column=\"21\" lean-forward=\"true\" selection-start-line=\"22\" selection-start-column=\"21\" selection-end-line=\"22\" selection-end-column=\"21\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/hello_bottle__m101p_54ffa9bcd8ca390acc94ceef.py\" />\n    <entry file=\"file://$PROJECT_DIR$/hello__m101p_525584dce2d4231cc608403f.py\" />\n    <entry file=\"file://C:/Program_Files/Anaconda3/envs/python27/Lib/site-packages/bottle.py\" />\n    <entry file=\"file://$PROJECT_DIR$/M101/hw1-2.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"108\">\n          <caret line=\"17\" lean-forward=\"true\" selection-start-line=\"17\" selection-end-line=\"17\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/M101/hw1-3.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"198\">\n          <caret line=\"11\" column=\"19\" lean-forward=\"true\" selection-start-line=\"11\" selection-start-column=\"19\" selection-end-line=\"11\" selection-end-column=\"19\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/example/using_regex.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"506\">\n          <caret line=\"24\" column=\"17\" lean-forward=\"true\" selection-start-line=\"24\" selection-start-column=\"17\" selection-end-line=\"24\" selection-end-column=\"17\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/example/read_reddit.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"132\">\n          <caret line=\"6\" column=\"18\" lean-forward=\"true\" selection-start-line=\"6\" selection-start-column=\"18\" selection-end-line=\"6\" selection-end-column=\"18\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://C:/Program_Files/Anaconda3/envs/python27/Lib/site-packages/pymongo/collection.py\" />\n    <entry file=\"file://$PROJECT_DIR$/example.py\" />\n    <entry file=\"file://$PROJECT_DIR$/test/find_using_gt_lt.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"176\">\n          <caret line=\"8\" column=\"17\" selection-start-line=\"8\" selection-start-column=\"17\" selection-end-line=\"8\" selection-end-column=\"17\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/test.py\" />\n    <entry file=\"file://$PROJECT_DIR$/test/bottle_hello.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"176\">\n          <caret line=\"8\" column=\"32\" selection-start-line=\"8\" selection-start-column=\"32\" selection-end-line=\"8\" selection-end-column=\"32\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/template/fruit_selected.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"176\">\n          <caret line=\"8\" column=\"19\" selection-start-line=\"8\" selection-start-column=\"19\" selection-end-line=\"8\" selection-end-column=\"19\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://C:/Program_Files/Anaconda3/envs/python27/Lib/cgi.py\" />\n    <entry file=\"file://$PROJECT_DIR$/template/hello world.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"330\">\n          <caret line=\"15\" column=\"40\" lean-forward=\"true\" selection-start-line=\"15\" selection-start-column=\"40\" selection-end-line=\"15\" selection-end-column=\"40\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/template/blog_signup.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"450\">\n          <caret line=\"25\" column=\"22\" selection-start-line=\"25\" selection-start-column=\"22\" selection-end-line=\"25\" selection-end-column=\"22\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://C:/Program_Files/Anaconda3/envs/python27/Lib/base64.py\" />\n    <entry file=\"file://$PROJECT_DIR$/example/validate_01.py\" />\n    <entry file=\"file://$PROJECT_DIR$/example/using_insert_many.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"176\">\n          <caret line=\"14\" column=\"55\" lean-forward=\"true\" selection-start-line=\"14\" selection-start-column=\"55\" selection-end-line=\"14\" selection-end-column=\"55\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/example/using_gridfs.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"324\">\n          <caret line=\"18\" column=\"15\" lean-forward=\"true\" selection-start-line=\"18\" selection-start-column=\"15\" selection-end-line=\"18\" selection-end-column=\"15\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/example/using_upsert.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"234\">\n          <caret line=\"14\" column=\"22\" selection-start-line=\"14\" selection-start-column=\"22\" selection-end-line=\"14\" selection-end-column=\"22\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$USER_HOME$/anaconda3/envs/python27/lib/python2.7/site-packages/pymongo/bulk.py\" />\n    <entry file=\"file://$PROJECT_DIR$/template/blog_welcome.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"550\">\n          <caret line=\"25\" column=\"9\" selection-start-line=\"25\" selection-start-column=\"9\" selection-end-line=\"25\" selection-end-column=\"9\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/pymongo_hello.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"198\">\n          <caret line=\"12\" column=\"36\" selection-start-line=\"12\" selection-start-column=\"36\" selection-end-line=\"12\" selection-end-column=\"36\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/example/using_find_and_modify.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"180\">\n          <caret line=\"10\" column=\"24\" lean-forward=\"true\" selection-start-line=\"10\" selection-start-column=\"24\" selection-end-line=\"10\" selection-end-column=\"24\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/userDAO.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"648\">\n          <caret line=\"56\" column=\"15\" lean-forward=\"true\" selection-start-line=\"56\" selection-start-column=\"15\" selection-end-line=\"56\" selection-end-column=\"15\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/template/blog_main.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"88\">\n          <caret line=\"4\" column=\"15\" selection-start-line=\"4\" selection-start-column=\"15\" selection-end-line=\"4\" selection-end-column=\"15\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$USER_HOME$/anaconda3/envs/python27/lib/python2.7/site-packages/bottle.py\" />\n    <entry file=\"file://$PROJECT_DIR$/example/using_replace_one.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"414\">\n          <caret line=\"43\" column=\"47\" lean-forward=\"true\" selection-start-line=\"43\" selection-start-column=\"47\" selection-end-line=\"43\" selection-end-column=\"47\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/example/using_insert_one.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"414\">\n          <caret line=\"23\" column=\"33\" lean-forward=\"true\" selection-start-line=\"23\" selection-start-column=\"33\" selection-end-line=\"23\" selection-end-column=\"33\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/template/blog_entry.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"748\">\n          <caret line=\"34\" column=\"30\" selection-start-line=\"34\" selection-start-column=\"30\" selection-end-line=\"34\" selection-end-column=\"30\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/example/using_update.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"432\">\n          <caret line=\"25\" selection-start-line=\"25\" selection-end-line=\"25\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/template/blog_newpost.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"242\">\n          <caret line=\"11\" column=\"25\" selection-start-line=\"11\" selection-start-column=\"25\" selection-end-line=\"11\" selection-end-column=\"25\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/example/using_limit_skip_sort.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"342\">\n          <caret line=\"19\" column=\"21\" selection-start-line=\"19\" selection-start-column=\"9\" selection-end-line=\"19\" selection-end-column=\"70\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/example/remove_lower_score.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"198\">\n          <caret line=\"11\" selection-start-line=\"11\" selection-end-line=\"11\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/example/validate_02.py\" />\n    <entry file=\"file://$PROJECT_DIR$/blogPostDAO.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"-9\">\n          <caret line=\"16\" column=\"1\" selection-start-line=\"16\" selection-start-column=\"1\" selection-end-line=\"16\" selection-end-column=\"1\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/sessionDAO.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"414\">\n          <caret line=\"25\" selection-start-line=\"25\" selection-end-line=\"25\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/example/remove_student_data.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"143\">\n          <caret line=\"10\" column=\"39\" selection-start-line=\"10\" selection-start-column=\"39\" selection-end-line=\"10\" selection-end-column=\"39\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/blog.py\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"432\">\n          <caret line=\"40\" column=\"17\" lean-forward=\"true\" selection-start-line=\"40\" selection-start-column=\"17\" selection-end-line=\"40\" selection-end-column=\"17\" />\n          <folding>\n            <element signature=\"n#!!doc\" />\n            <element signature=\"e#626#640#0\" expanded=\"true\" />\n            <element signature=\"e#3524#4050#0\" />\n            <element signature=\"e#4152#5329#0\" />\n            <element signature=\"e#6116#7174#0\" />\n            <element signature=\"e#7388#7546#0\" />\n            <element signature=\"e#7618#8617#0\" />\n            <element signature=\"e#8671#9058#0\" />\n            <element signature=\"e#9286#10109#0\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/template/blog_login.html\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"144\">\n          <caret line=\"8\" column=\"12\" lean-forward=\"true\" selection-start-line=\"8\" selection-start-column=\"12\" selection-end-line=\"8\" selection-end-column=\"12\" />\n        </state>\n      </provider>\n    </entry>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(date 1525177114000)
++++ .idea/workspace.xml	(date 1525177786000)
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="6e5197b2-f5e5-4e0d-b57f-5ec81add7352" name="Default" comment="Update from pycharm">
++    <list default="true" id="6e5197b2-f5e5-4e0d-b57f-5ec81add7352" name="Default" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+@@ -15,31 +15,11 @@
+     <splitter split-orientation="horizontal" split-proportion="0.5322581">
+       <split-first>
+         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+-          <file leaf-file-name="sessionDAO.py" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/sessionDAO.py">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="414">
+-                  <caret line="25" selection-start-line="25" selection-end-line="25" />
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="blog.py" pinned="false" current-in-tab="true">
+-            <entry file="file://$PROJECT_DIR$/blog.py">
++          <file leaf-file-name="Create_For_Git_Test.py" pinned="false" current-in-tab="true">
++            <entry file="file://$PROJECT_DIR$/Create_For_Git_Test.py">
+               <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="432">
+-                  <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+-                  <folding>
+-                    <element signature="n#!!doc" />
+-                    <element signature="e#626#640#0" expanded="true" />
+-                    <element signature="e#3524#4050#0" />
+-                    <element signature="e#4152#5329#0" />
+-                    <element signature="e#6116#7174#0" />
+-                    <element signature="e#7388#7546#0" />
+-                    <element signature="e#7618#8617#0" />
+-                    <element signature="e#8671#9058#0" />
+-                    <element signature="e#9286#10109#0" />
+-                  </folding>
++                <state>
++                  <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+                 </state>
+               </provider>
+             </entry>
+@@ -48,11 +28,11 @@
+       </split-first>
+       <split-second>
+         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+-          <file leaf-file-name="blog_login.html" pinned="false" current-in-tab="true">
++          <file leaf-file-name="blog_login.html" pinned="false" current-in-tab="false">
+             <entry file="file://$PROJECT_DIR$/template/blog_login.html">
+               <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="144">
+-                  <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
++                <state>
++                  <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+                 </state>
+               </provider>
+             </entry>
+@@ -66,10 +46,10 @@
+               </provider>
+             </entry>
+           </file>
+-          <file leaf-file-name="remove_student_data.py" pinned="false" current-in-tab="false">
++          <file leaf-file-name="remove_student_data.py" pinned="false" current-in-tab="true">
+             <entry file="file://$PROJECT_DIR$/example/remove_student_data.py">
+               <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="143">
++                <state relative-caret-position="144">
+                   <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+                 </state>
+               </provider>
+@@ -87,6 +67,9 @@
+       </list>
+     </option>
+   </component>
++  <component name="Git.Rebase.Settings">
++    <option name="ONTO" value="refs/heads/mongo_lc" />
++  </component>
+   <component name="Git.Settings">
+     <option name="PUSH_AUTO_UPDATE" value="true" />
+     <option name="ROOT_SYNC" value="DONT_SYNC" />
+@@ -150,6 +133,8 @@
+         <option value="$PROJECT_DIR$/template/blog_entry.html" />
+         <option value="$PROJECT_DIR$/template/blog_newpost.html" />
+         <option value="$PROJECT_DIR$/blogPostDAO.py" />
++        <option value="$PROJECT_DIR$/test/Create_For_Git_Test.py" />
++        <option value="$PROJECT_DIR$/Create_For_Git_Test.py" />
+       </list>
+     </option>
+   </component>
+@@ -183,23 +168,39 @@
+   </component>
+   <component name="PropertiesComponent">
+     <property name="DefaultHtmlFileTemplate" value="HTML File" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="459" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="459" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="459" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="458" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="459" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="459" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="459" />
++    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="458" />
+     <property name="last_opened_file_path" value="$USER_HOME$/anaconda3/envs/python35/bin" />
+-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
++    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+   </component>
+   <component name="RecentsManager">
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$" />
++      <recent name="C:\Users\jhsha\Documents\GitHubWorkFiles\mongo_homework\Mongo_blog\example" />
++      <recent name="C:\Users\jhsha\Documents\GitHubWorkFiles\mongo_homework\Mongo_blog" />
++      <recent name="$PROJECT_DIR$/test" />
++      <recent name="$PROJECT_DIR$/example" />
++    </key>
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$" />
+       <recent name="$PROJECT_DIR$/template" />
+       <recent name="C:\Users\jhsha\Documents\PyCharmWorkFiles\Mongo_blog" />
+       <recent name="C:\Users\jhsha\Documents\PyCharmWorkFiles\Mongo_blog\M101" />
+     </key>
+-    <key name="MoveFile.RECENT_KEYS">
+-      <recent name="C:\Users\jhsha\Documents\GitHubWorkFiles\mongo_homework\Mongo_blog\example" />
+-      <recent name="C:\Users\jhsha\Documents\GitHubWorkFiles\mongo_homework\Mongo_blog" />
+-      <recent name="$PROJECT_DIR$/test" />
+-      <recent name="$PROJECT_DIR$/example" />
+-      <recent name="C:\Users\jhsha\Documents\PyCharmWorkFiles\Mongo_blog\example" />
+-    </key>
+   </component>
+   <component name="RunDashboard">
+     <option name="ruleStates">
+@@ -339,21 +340,34 @@
+       <option name="project" value="LOCAL" />
+       <updated>1525175461905</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Update from pycharm">
++      <created>1525176718165</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1525176718165</updated>
++    </task>
++    <task id="LOCAL-00003" summary="Update from pycharm 1st">
++      <created>1525177114880</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1525177114880</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="ToolWindowManager">
+     <frame x="53" y="-4" width="1867" height="1084" extended-state="6" />
+-    <editor active="true" />
+     <layout>
+-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15747188" />
++      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15960912" />
+       <window_info anchor="bottom" id="TODO" order="6" />
+       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32955715" />
+       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32955715" />
+       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32901832" />
+       <window_info anchor="bottom" id="Run" order="2" weight="0.46343976" />
+       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+-      <window_info anchor="bottom" id="Terminal" order="7" />
++      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32980973" />
+       <window_info id="Favorites" order="2" side_tool="true" />
+       <window_info anchor="bottom" id="Debug" order="3" weight="0.46709818" />
+       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+@@ -376,7 +390,8 @@
+       <path value="$PROJECT_DIR$" />
+     </ignored-roots>
+     <MESSAGE value="Update from pycharm" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Update from pycharm" />
++    <MESSAGE value="Update from pycharm 1st" />
++    <option name="LAST_COMMIT_MESSAGE" value="Update from pycharm 1st" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+@@ -384,13 +399,6 @@
+     </breakpoint-manager>
+   </component>
+   <component name="editorHistoryManager">
+-    <entry file="file://$PROJECT_DIR$/template/blog_main.html">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="88">
+-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+-        </state>
+-      </provider>
+-    </entry>
+     <entry file="file://$PROJECT_DIR$/template/blog_newpost.html">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="242">
+@@ -623,13 +631,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="342">
+           <caret line="19" column="21" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="70" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/example/remove_lower_score.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="198">
+-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+         </state>
+       </provider>
+     </entry>
+@@ -641,24 +642,10 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/sessionDAO.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="414">
+-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/example/remove_student_data.py">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="143">
+-          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+-        </state>
+-      </provider>
+-    </entry>
+     <entry file="file://$PROJECT_DIR$/blog.py">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="432">
+-          <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
++        <state relative-caret-position="306">
++          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+           <folding>
+             <element signature="n#!!doc" />
+             <element signature="e#626#640#0" expanded="true" />
+@@ -670,13 +657,41 @@
+             <element signature="e#8671#9058#0" />
+             <element signature="e#9286#10109#0" />
+           </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/sessionDAO.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="414">
++          <caret line="25" selection-start-line="25" selection-end-line="25" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/Create_For_Git_Test.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state>
++          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/template/blog_login.html">
+       <provider selected="true" editor-type-id="text-editor">
++        <state>
++          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/example/remove_lower_score.py">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="198">
++          <caret line="11" selection-start-line="11" selection-end-line="11" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/example/remove_student_data.py">
++      <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="144">
+-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
++          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+         </state>
+       </provider>
+     </entry>
