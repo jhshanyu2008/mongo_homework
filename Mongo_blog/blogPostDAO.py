@@ -36,7 +36,6 @@ class BlogPostDAO:
     def insert_entry(self, title, post, tags_array, author):
         print "inserting blog entry", title, post
 
-        # fix up the permalink to not include whitespace
         self.post_count += 1
         exp = re.compile('\W')  # match anything not alphanumeric
         whitespace = re.compile('\s')
@@ -65,9 +64,28 @@ class BlogPostDAO:
     # returns an array of num_posts posts, reverse ordered by date.
     def get_posts(self, num_posts):
 
-        cursor = self.posts.find()
-        cursor.sort('date', pymongo.DESCENDING).limit(num_posts)
+        posts = self.posts.find().sort('date', pymongo.DESCENDING).limit(num_posts)
+        post_list = []
 
+        for post in posts:
+            post['date'] = post['date'].strftime("%A, %B %d %Y at %I:%M%p")  # fix up date
+            if 'tags' not in post:
+                post['tags'] = []  # fill it in if its not there already
+            if 'comments' not in post:
+                post['comments'] = []
+
+            post_list.append({'title': post['title'], 'body': post['body'], 'post_date': post['date'],
+                              'permalink': post['permalink'],
+                              'tags': post['tags'],
+                              'author': post['author'],
+                              'comments': post['comments']})
+
+        return post_list
+
+    # returns an array of num_posts posts, reverse ordered, filtered by tag
+    def get_posts_by_tag(self, tag, num_posts):
+
+        cursor = self.posts.find({'tags': tag}).sort('date', pymongo.DESCENDING).limit(num_posts)
         post_list = []
 
         for post in cursor:
@@ -111,12 +129,7 @@ class BlogPostDAO:
             comment['email'] = email
 
         try:
-            query = {"permalink": permalink}
-            post = self.posts.find_one(query)
-            post["comments"].append(comment)
-
-            result = self.posts.update_one({'_id': post["_id"]},
-                                           {'$set': {'comments': post["comments"]}})
+            result = self.posts.update_one({'permalink': permalink}, {'$push': {'comments': comment}})
 
             return result.matched_count
 

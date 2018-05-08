@@ -48,16 +48,30 @@ def blog_index():
     return bottle.template('template/blog_main.html', dict(myposts=post_list, username=username))
 
 
+# The main page of the blog, filtered by tag
+@bottle.route('/tag/<tag>')
+def posts_by_tag(tag="notfound"):
+    cookie = bottle.request.get_cookie("session")
+    tag = cgi.escape(tag)
+
+    username = sessions.get_username(cookie)
+
+    # even if there is no logged in user, we can show the blog
+    post_list = posts.get_posts_by_tag(tag, 10)
+
+    return bottle.template('template/blog_main.html', dict(myposts=post_list, username=username))
+
+
 # Displays the form allowing a user to add a new post. Only works for logged in users
 @bottle.get('/newpost')
 def get_newpost():
-
     cookie = bottle.request.get_cookie("session")
     username = sessions.get_username(cookie)  # see if user is logged in
     if username is None:
         bottle.redirect("/login")
 
-    return bottle.template("template/blog_newpost.html", dict(subject="", body="", errors="", tags="", username=username))
+    return bottle.template("template/blog_newpost.html",
+                           dict(subject="", body="", errors="", tags="", username=username))
 
 
 # Post handler for setting up a new post.
@@ -298,7 +312,6 @@ def validate_signup(username, password, verify, email, errors):
 
 # extracts the tag from the tags form element. an experience python programmer could do this in  fewer lines, no doubt
 def extract_tags(tags):
-
     whitespace = re.compile('\s')
 
     no_white = whitespace.sub("", tags)
