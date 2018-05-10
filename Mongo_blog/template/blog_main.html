@@ -16,7 +16,7 @@
 
 %for post in myposts:
 <h2><a href="/post/{{post['permalink']}}">{{post['title']}}</a></h2>
-Posted {{post['post_date']}} <i>By {{post['author']}}</i><br>
+Posted {{post['post_date']}} <i>By <a href="/author/{{post['author']}}">{{post['author']}}</a></i><br>
 Comments:
 %if ('comments' in post):
     %numComments = len(post['comments'])
@@ -25,7 +25,7 @@ Comments:
 %end
 <a href="/post/{{post['permalink']}}">{{numComments}}</a>
 <hr>
-{{!post['body']}}
+{{!post['body'][:100]}}......
 <p>
 <p>
 <em>Filed Under</em>:

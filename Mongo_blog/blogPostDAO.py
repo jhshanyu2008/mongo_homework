@@ -34,7 +34,7 @@ class BlogPostDAO:
 
     # inserts the blog entry and returns a permalink for the entry
     def insert_entry(self, title, post, tags_array, author):
-        print "inserting blog entry", title, post
+        print "Inserting a Blog Entry", title
 
         self.post_count += 1
         exp = re.compile('\W')  # match anything not alphanumeric
@@ -54,7 +54,7 @@ class BlogPostDAO:
         # now insert the post
         try:
             self.posts.insert_one(post)
-            print "Inserting the post"
+            print "Inserted the Post Successfully.", title
         except:
             print "Error inserting post"
             print "Unexpected error:", sys.exc_info()[0]
@@ -101,6 +101,25 @@ class BlogPostDAO:
                               'author': post['author'],
                               'comments': post['comments']})
 
+        return post_list
+
+    # returns an array of num_posts posts, reverse ordered, filtered by author
+    def get_posts_by_author(self, author, num_posts):
+        cursor = self.posts.find({'author': author}).sort('date', pymongo.DESCENDING).limit(num_posts)
+        post_list = []
+
+        for post in cursor:
+            post['date'] = post['date'].strftime("%A, %B %d %Y at %I:%M%p")  # fix up date
+            if 'tags' not in post:
+                post['tags'] = []  # fill it in if its not there already
+            if 'comments' not in post:
+                post['comments'] = []
+
+            post_list.append({'title': post['title'], 'body': post['body'], 'post_date': post['date'],
+                              'permalink': post['permalink'],
+                              'tags': post['tags'],
+                              'author': post['author'],
+                              'comments': post['comments']})
         return post_list
 
     # find a post corresponding to a particular permalink

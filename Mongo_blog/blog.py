@@ -56,8 +56,24 @@ def posts_by_tag(tag="notfound"):
 
     username = sessions.get_username(cookie)
 
+    print "About to query on tag : ", tag
     # even if there is no logged in user, we can show the blog
     post_list = posts.get_posts_by_tag(tag, 10)
+
+    return bottle.template('template/blog_main.html', dict(myposts=post_list, username=username))
+
+
+# The main page of the blog, filtered by tag
+@bottle.route('/author/<author>')
+def posts_by_tag(author="notfound"):
+    cookie = bottle.request.get_cookie("session")
+    author = cgi.escape(author)
+
+    username = sessions.get_username(cookie)
+
+    print "About to query on author : ", author
+    # even if there is no logged in user, we can show the blog
+    post_list = posts.get_posts_by_author(author, 10)
 
     return bottle.template('template/blog_main.html', dict(myposts=post_list, username=username))
 
@@ -117,7 +133,7 @@ def show_post(permalink="notfound"):
     username = sessions.get_username(cookie)
     permalink = cgi.escape(permalink)
 
-    print "about to query on permalink = ", permalink
+    print "About to query on permalink : ", permalink
     post = posts.get_post_by_permalink(permalink)
 
     if post is None:

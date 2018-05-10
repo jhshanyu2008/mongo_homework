@@ -81,7 +81,7 @@ class UserDAO:
         try:
             self.db.users.insert_one(user)
             # print "This space intentionally left blank."
-            print "Insert successfully."
+            print "User Insert Successfully."
 
         except pymongo.errors.OperationFailure:
             print "oops, mongo error"
