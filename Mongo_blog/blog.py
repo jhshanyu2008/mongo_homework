@@ -63,7 +63,7 @@ def posts_by_tag(tag="notfound"):
     return bottle.template('template/blog_main.html', dict(myposts=post_list, username=username))
 
 
-# The main page of the blog, filtered by tag
+# The main page of the blog, filtered by author
 @bottle.route('/author/<author>')
 def posts_by_tag(author="notfound"):
     cookie = bottle.request.get_cookie("session")
