@@ -10,14 +10,18 @@
 
 <body>
 %if (username != None):
-    Welcome {{username}} <a href="/logout">Logout</a> |
+    Welcome <a href="/author/{{username}}">{{username}}</a> | <a href="/logout">logout</a> |
+%else:
+    Welcome <a href="/login">login</a> | <a href="/signup">sign up</a><p>
 %end
 <a href="/">Blog Home</a>
 
 <h2>{{post['title']}}</h2>
-<p>发表时间:{{post['date']}}
-   作者:<a href="/author/{{post['author']}}">{{post['author']}}</a>
-   更新:<a href="/update/{{post['permalink']}}">重新编辑</a></p>
+<p>发表时间 : {{post['date']}} |
+   作者 : <a href="/author/{{post['author']}}">{{post['author']}}</a>
+   %if (username == post["author"]):
+        |  更新 : <a href="/update/{{post['permalink']}}">重新编辑</a></p>
+   %end
 
 <hr>{{!post['body']}}<p>
 <em>标签 </em>:

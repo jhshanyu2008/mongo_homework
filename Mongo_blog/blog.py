@@ -73,7 +73,7 @@ def posts_by_tag(author="notfound"):
 
     print "About to query on author : ", author
     # even if there is no logged in user, we can show the blog
-    post_list = posts.get_posts_by_author(author, 10)
+    post_list = posts.get_posts_by_author(author)
 
     return bottle.template('template/blog_main.html', dict(myposts=post_list, username=username))
 

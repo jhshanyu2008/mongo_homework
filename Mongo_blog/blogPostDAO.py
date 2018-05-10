@@ -123,8 +123,8 @@ class BlogPostDAO:
         return post_list
 
     # returns an array of num_posts posts, reverse ordered, filtered by author
-    def get_posts_by_author(self, author, num_posts):
-        cursor = self.posts.find({'author': author}).sort('date', pymongo.DESCENDING).limit(num_posts)
+    def get_posts_by_author(self, author):
+        cursor = self.posts.find({'author': author}).sort('date', pymongo.DESCENDING)
         post_list = []
 
         for post in cursor:
