@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        Create a new post
+        Update Post
     </title>
 </head>
 
@@ -12,7 +12,7 @@
     Welcome {{username}} <a href="/logout">Logout</a> | <a href="/">Blog Home</a><p>
 %end
 <ul>
-    <form action="/newpost" method="POST">
+    <form action="/update/{{permalink}}" method="POST">
     {{errors}}
     <h2>Title</h2>
     <input type="text" name="subject" size="120" value="{{subject}}"><br>
@@ -30,4 +30,3 @@
 
 </body>
 </html>
-

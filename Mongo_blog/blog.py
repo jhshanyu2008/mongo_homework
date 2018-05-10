@@ -90,6 +90,31 @@ def get_newpost():
                            dict(subject="", body="", errors="", tags="", username=username))
 
 
+@bottle.get('/update/<permalink>')
+def get_newpost(permalink="notfound"):
+    cookie = bottle.request.get_cookie("session")
+    username = sessions.get_username(cookie)  # see if user is logged in
+    if username is None:
+        bottle.redirect("/login")
+
+    permalink = cgi.escape(permalink)
+    post = posts.get_post_by_permalink(permalink)
+
+    if post is None:
+        bottle.redirect("/post_not_found")
+
+    newline = re.compile("<p>")
+    formatted_post = newline.sub('\r\n', post["body"])
+
+    tag_str = ""
+    for tag in post["tags"]:
+        tag_str += tag + " "
+
+    return bottle.template("template/blog_updatepost.html",
+                           dict(permalink=permalink, subject=post["title"],
+                                body=formatted_post, errors="", tags=tag_str, username=username))
+
+
 # Post handler for setting up a new post.
 # Only works for logged in user.
 @bottle.post('/newpost')
@@ -105,8 +130,9 @@ def post_newpost():
 
     if title == "" or post == "":
         errors = "Post must contain a title and blog entry"
-        return bottle.template("newpost_template", dict(subject=cgi.escape(title, quote=True), username=username,
-                                                        body=cgi.escape(post, quote=True), tags=tags, errors=errors))
+        return bottle.template("template/blog_newpost.html",
+                               dict(subject=cgi.escape(title, quote=True), username=username,
+                                    body=cgi.escape(post, quote=True), tags=tags, errors=errors))
 
     # extract tags
     tags = cgi.escape(tags)
@@ -122,6 +148,42 @@ def post_newpost():
     permalink = posts.insert_entry(title, formatted_post, tags_array, username)
 
     # now bottle.redirect to the blog permalink
+    bottle.redirect("/post/" + permalink)
+
+
+# Post handler for updating an existed post.
+# Only works for logged in user.
+@bottle.post('/update/<permalink>')
+def post_updatepost(permalink="no found"):
+    new_title = bottle.request.forms.get("subject")
+    new_post = bottle.request.forms.get("body")
+    new_tags = bottle.request.forms.get("tags")
+
+    cookie_sess = bottle.request.get_cookie("session")
+
+    username = sessions.get_username(cookie_sess)  # see if user is logged in
+    if username is None:
+        bottle.redirect("/login")
+
+    if new_title == "" or new_post == "":
+        errors = "Post must contain a title and blog entry"
+        return bottle.template("template/blog_updatepost.html",
+                               dict(subject=cgi.escape(new_title, quote=True), username=username,
+                                    body=cgi.escape(new_post, quote=True), tags=new_tags, errors=errors))
+
+    # extract tags
+    new_tags = cgi.escape(new_tags)
+    new_tag_list = extract_tags(new_tags)
+
+    # looks like a good entry, insert it escaped
+    escaped_post = cgi.escape(new_post, quote=True)
+
+    # substitute some <p> for the paragraph breaks
+    newline = re.compile('\r?\n')
+    formatted_post = newline.sub("<p>", escaped_post)
+
+    posts.update_entry(permalink, new_title, formatted_post, new_tag_list)
+
     bottle.redirect("/post/" + permalink)
 
 
@@ -328,10 +390,8 @@ def validate_signup(username, password, verify, email, errors):
 
 # extracts the tag from the tags form element. an experience python programmer could do this in  fewer lines, no doubt
 def extract_tags(tags):
-    whitespace = re.compile('\s')
 
-    no_white = whitespace.sub("", tags)
-    tags_array = no_white.split(',')
+    tags_array = tags.split(' ')
 
     # let's clean it up
     cleaned = []

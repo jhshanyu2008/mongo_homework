@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>
         Blog Post
     </title>
@@ -14,16 +15,17 @@
 <a href="/">Blog Home</a>
 
 <h2>{{post['title']}}</h2>
-Posted {{post['date']}}
-<i> By {{post['author']}}</i><br>
+<p>发表时间:{{post['date']}}
+   作者:<a href="/author/{{post['author']}}">{{post['author']}}</a>
+   更新:<a href="/update/{{post['permalink']}}">重新编辑</a></p>
 
 <hr>{{!post['body']}}<p>
-<em>Filed Under</em>: 
+<em>标签 </em>:
 %if ('tags' in post):
      %for tag in post['tags'][0:1]:
-         {{tag}}
+         <a href="/tag/{{tag}}">{{tag}}</a>
          %for tag in post['tags'][1:]:
-             , {{tag}}
+             , <a href="/tag/{{tag}}">{{tag}}</a>
          %end
      %end
 %end

@@ -34,7 +34,7 @@ class BlogPostDAO:
 
     # inserts the blog entry and returns a permalink for the entry
     def insert_entry(self, title, post, tags_array, author):
-        print "Inserting a Blog Entry", title
+        print "Inserting a Blog Entry", author, title
 
         self.post_count += 1
         exp = re.compile('\W')  # match anything not alphanumeric
@@ -60,6 +60,25 @@ class BlogPostDAO:
             print "Unexpected error:", sys.exc_info()[0]
 
         return permalink
+
+    # update a blog entry and returns its permalink
+    def update_entry(self, permalink, new_title, new_post, new_tag_list):
+
+        print "Updating a Blog Entry", permalink
+
+        # update the post
+        try:
+            content = {"title": new_title,
+                       "body": new_post,
+                       "tags": new_tag_list,
+                       "date": datetime.datetime.utcnow()}
+            result = self.posts.update_one({'permalink': permalink},
+                                           {'$set': content})
+            print "num matched: ", result.matched_count
+            print "Update the Post Successfully.", permalink
+        except:
+            print "Error updating post"
+            print "Unexpected error:", sys.exc_info()[0]
 
     # returns an array of num_posts posts, reverse ordered by date.
     def get_posts(self, num_posts):
@@ -128,8 +147,8 @@ class BlogPostDAO:
         post = None
 
         try:
-            query = {"permalink": permalink}
-            post = self.posts.find_one(query)
+            cursor = {"permalink": permalink}
+            post = self.posts.find_one(cursor)
         except:
             print "No such post, internal error."
 
