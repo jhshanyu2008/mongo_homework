@@ -15,15 +15,17 @@
 # limitations under the License.
 #
 #
+import cgi
+import os
+import re
+import sys
 
-
+import bottle
 import pymongo
+
 import blogPostDAO
 import sessionDAO
 import userDAO
-import bottle
-import cgi
-import re
 
 __author__ = 'aje'
 
@@ -33,10 +35,41 @@ __author__ = 'aje'
 # by functions. The basic way that this magic occurs is through the decorator design pattern. Decorators
 # allow you to modify a function, adding code to be executed before and after the function. As a side effect
 # the bottle.py decorators also put each callback into a route table.
-
 # These are the routes that the blog must handle. They are decorated using bottle.py
-
 # This route is the main page of the blog
+
+
+pro_path = os.path.split(os.path.realpath(__file__))[0]
+sys.path.append(pro_path)
+css_path = '/'.join((pro_path, 'template/css'))
+image_path = '/'.join((pro_path, 'template/images'))
+script_path = '/'.join((pro_path, 'template/scripts'))
+
+
+@bottle.route('/css/<filename:re:.*\.css>')
+@bottle.route('/tag/css/<filename:re:.*\.css>')
+@bottle.route('/author/css/<filename:re:.*\.css>')
+def index_static_css(filename):
+    """定义/assets/下的静态(css,js,图片)资源路径"""
+    return bottle.static_file(filename, root=css_path)
+
+
+@bottle.route('/images/<filename:re:.*\.jpg|.*\.gif|.*\.png>')
+@bottle.route('/tag/images/<filename:re:.*\.jpg|.*\.gif|.*\.png>')
+@bottle.route('/author/images/<filename:re:.*\.jpg|.*\.gif|.*\.png>')
+def index_static_image(filename):
+    """定义/assets/下的静态(css,js,图片)资源路径"""
+    return bottle.static_file(filename, root=image_path)
+
+
+@bottle.route('/scripts/<filename:re:.*\.js|.*\.php>')
+@bottle.route('/tag/scripts/<filename:re:.*\.js|.*\.php>')
+@bottle.route('/author/scripts/<filename:re:.*\.js|.*\.php>')
+def index_static_script(filename):
+    """定义/assets/下的静态(css,js,图片)资源路径"""
+    return bottle.static_file(filename, root=script_path)
+
+
 @bottle.route('/')
 def blog_index():
     cookie = bottle.request.get_cookie("session")
@@ -411,4 +444,4 @@ users = userDAO.UserDAO(database)
 sessions = sessionDAO.SessionDAO(database)
 
 bottle.debug(True)
-bottle.run(host='localhost', port=8082)  # Start the webserver running and wait for requests
+bottle.run(host='192.168.1.100', port=8082)  # Start the webserver running and wait for requests
