@@ -50,7 +50,7 @@ script_path = '/'.join((pro_path, 'template/scripts'))
 @bottle.route('/tag/css/<filename:re:.*\.css>')
 @bottle.route('/author/css/<filename:re:.*\.css>')
 def index_static_css(filename):
-    """定义/assets/下的静态(css,js,图片)资源路径"""
+    """定义静态css资源路径"""
     return bottle.static_file(filename, root=css_path)
 
 
@@ -58,7 +58,7 @@ def index_static_css(filename):
 @bottle.route('/tag/images/<filename:re:.*\.jpg|.*\.gif|.*\.png>')
 @bottle.route('/author/images/<filename:re:.*\.jpg|.*\.gif|.*\.png>')
 def index_static_image(filename):
-    """定义/assets/下的静态(css,js,图片)资源路径"""
+    """定义图片资源路径"""
     return bottle.static_file(filename, root=image_path)
 
 
@@ -66,7 +66,7 @@ def index_static_image(filename):
 @bottle.route('/tag/scripts/<filename:re:.*\.js|.*\.php>')
 @bottle.route('/author/scripts/<filename:re:.*\.js|.*\.php>')
 def index_static_script(filename):
-    """定义/assets/下的静态(css,js,图片)资源路径"""
+    """定义js资源路径"""
     return bottle.static_file(filename, root=script_path)
 
 
@@ -77,8 +77,9 @@ def blog_index():
 
     # even if there is no logged in user, we can show the blog
     post_list = posts.get_posts(15)
+    page = "main"
 
-    return bottle.template('template/blog_main.html', dict(myposts=post_list, username=username))
+    return bottle.template('template/blog_main.html', dict(myposts=post_list, username=username, page=page))
 
 
 # The main page of the blog, filtered by tag
@@ -92,8 +93,9 @@ def posts_by_tag(tag="notfound"):
     print "About to query on tag : ", tag
     # even if there is no logged in user, we can show the blog
     post_list = posts.get_posts_by_tag(tag, 10)
+    page = "tag"
 
-    return bottle.template('template/blog_main.html', dict(myposts=post_list, username=username))
+    return bottle.template('template/blog_main.html', dict(myposts=post_list, username=username, page=page))
 
 
 # The main page of the blog, filtered by author
@@ -107,8 +109,9 @@ def posts_by_tag(author="notfound"):
     print "About to query on author : ", author
     # even if there is no logged in user, we can show the blog
     post_list = posts.get_posts_by_author(author)
+    page = 'author'
 
-    return bottle.template('template/blog_main.html', dict(myposts=post_list, username=username))
+    return bottle.template('template/blog_main.html', dict(myposts=post_list, username=username, page=page))
 
 
 # Displays the form allowing a user to add a new post. Only works for logged in users

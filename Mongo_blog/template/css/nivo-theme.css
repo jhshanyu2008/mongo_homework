@@ -9,10 +9,11 @@ Author URI: http://92five.net
 */
 
 .theme-effe .nivoSlider {
-	width: 720px;
+	width: 610px;
 	height: 320px;
 	position:relative;
-	margin-right: auto;
+	margin-left: 100px;
+	margin-right: 300;
 	margin-top: 20px;
 	background:#fff url(../images/loading.gif) no-repeat 50% 50%;
 }

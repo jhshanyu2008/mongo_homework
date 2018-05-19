@@ -71,7 +71,7 @@ General CSS
 ******************************************************************/
 									
 #content {
-	width: 100%;
+	width: 1010px;
 	padding-top: 100px;
 	margin-left: 270px;
 	z-index: 1;
@@ -251,7 +251,7 @@ a:hover {
 	color: #E35A88;
 }
 .spacer {
-    width: 800px;
+    width: 1010px;
 	height: 1px;
 	clear: both;
 	border-bottom: 1px;
@@ -269,7 +269,7 @@ a:hover {
 .text-block {
     text-align: center;
 	height: auto;
-	width: 720px;
+	width: 900px;
 }
 .star-divider {
 	background-image:url(../images/star_divider.png);
@@ -321,12 +321,20 @@ Header & Menu CSS
 	width: 100px;
 	padding: 10px 70px 10px 70px;
 }
+#user-menu {
+    width: 240px;
+	text-align: center;
+	float: right;
+	display: block;
+	height: 30px;
+	padding: 35px 0px 35px 0px;
+}
 #header-text {
-	width: 960px;
+	width: 1280px;
 	text-align: center;
 	display: block;
-	height: 20px;
-	padding: 40px 0px 0px 0px;
+	height: 30px;
+	padding: 35px 0px 35px 0px;
 }
 #header-text h6 {
 	font-size: 7pt;
@@ -354,7 +362,7 @@ Header & Menu CSS
 	height: 100%;
 	padding-top: 120px;
 	float: left;
-	width: 239px;
+	width: 270px;
 }
 #main-menu {
 	position: fixed;
@@ -517,7 +525,7 @@ Home Page CSS
 ******************************************************************/
 
 #recent-posts-container {
-	width: 720px;
+	width: 960px;
 	height: 200px;
 	margin-top: 60px;
 }
@@ -529,20 +537,20 @@ Home Page CSS
 .section-description {
 	float: left;
 	width: 110px;
-	height: 160px;
+	height: 100%;
 	padding-right: 20px;
 	border-right: 1px;
 	border-style: solid;
 	border-color: #d8d8d8;
 }
 .recent-summary {
-	width: 600px;
+	width: 100%;
 	display: inline;
 }
 .recent-item {
 	padding-left: 40px;
 	float: left;
-	width: 545px;
+	width: 780px;
 }
 .recent-item-last {
 	float: right;

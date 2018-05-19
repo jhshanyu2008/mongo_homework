@@ -41,9 +41,17 @@
 <div id="header-wrapper">
 	<div id="header">
 		<div id="logo"> <a href="/"><img src="images/logo.png" width="100" height="80" alt="logo" /></a> </div>
+		<div id="user-menu">
+			%if (username != None):
+                <h4><a href="/logout">Logout</a> | <a href="/newpost">New Post</a></h4>
+            %else:
+			    <h4><a href="/login">Login</a> | <a href="/signup">Sign Up</a></h4>
+			%end
+		</div>
 		<div id="header-text">
 			<h4>A Simple Blog System for Lab-607</h4>
 		</div>
+
 	</div>
 </div>
 <!--END of header-->
@@ -51,10 +59,20 @@
 <div id="menu-wrapper">
 	<div id="main-menu">
 		<ul>
-			<li><a class="selected" href="/">Home →</a></li>
+			%if (page == 'main'):
+			   <li><a class="selected" href="/">Home →</a></li>
+			%else:
+			   <li><a href="/">Home →</a></li>
+			%end
+			%if (username != None):
+			    %if (page == 'author'):
+                   <li><a class="selected" href="/author/{{username}}">MyBlog</a></li>
+			    %else:
+			       <li><a href="/author/{{username}}">MyBlog</a></li>
+			    %end
+			%end
 			<li><a href="/">About</a></li>
 			<li><a href="/">Portfolio</a></li>
-			<li><a href="/">Blog</a></li>
 			<li><a href="/">Contact</a></li>
 			<li><a href="/">Features</a></li>
 		</ul>
@@ -69,6 +87,7 @@
 <!--END of menu-->
 <div id="content">
 	<!--This is the START of the NIVO slider-->
+	%if (page == 'main'):
 	<div class="slider-wrapper theme-effe">
 		<div id="slider" class="nivoSlider">
             <img src="images/slider/slide1.jpg" alt="" title="#img1" />
@@ -77,6 +96,7 @@
             <img src="images/slider/slide4.jpg" alt="" title="#img4" />
         </div>
 	</div>
+	%end
 	<!--END of NIVO Slider-->
 	<!--This is the START of the recent posts-->
 	<div class="spacer"></div>
@@ -118,10 +138,6 @@
                     %end
 				%end
 			</div>
-			<!--<div class="recent-item-last"> <a class="single_image" href="images/blog/large/recent2.jpg"><img src="images/blog/thumbs/recent2.jpg" width="250" height="150" alt="recent2" /></a>-->
-				<!--<h6><a href="/post/{{post['permalink']}}">{{post['title']}}</a></h6>-->
-				<!--<p>Could drop some lorem here.<a class="readmore" href="blog.html">read more →</a></p>-->
-			<!--</div>-->
 		</div>
 		<!--END of recent posts-->
 		<!--This is the START of the recent projects-->
