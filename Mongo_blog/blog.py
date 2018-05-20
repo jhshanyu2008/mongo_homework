@@ -49,6 +49,7 @@ script_path = '/'.join((pro_path, 'template/scripts'))
 @bottle.route('/css/<filename:re:.*\.css>')
 @bottle.route('/tag/css/<filename:re:.*\.css>')
 @bottle.route('/author/css/<filename:re:.*\.css>')
+@bottle.route('/post/css/<filename:re:.*\.css>')
 def index_static_css(filename):
     """定义静态css资源路径"""
     return bottle.static_file(filename, root=css_path)
@@ -57,6 +58,7 @@ def index_static_css(filename):
 @bottle.route('/images/<filename:re:.*\.jpg|.*\.gif|.*\.png>')
 @bottle.route('/tag/images/<filename:re:.*\.jpg|.*\.gif|.*\.png>')
 @bottle.route('/author/images/<filename:re:.*\.jpg|.*\.gif|.*\.png>')
+@bottle.route('/post/images/<filename:re:.*\.jpg|.*\.gif|.*\.png>')
 def index_static_image(filename):
     """定义图片资源路径"""
     return bottle.static_file(filename, root=image_path)
@@ -65,6 +67,7 @@ def index_static_image(filename):
 @bottle.route('/scripts/<filename:re:.*\.js|.*\.php>')
 @bottle.route('/tag/scripts/<filename:re:.*\.js|.*\.php>')
 @bottle.route('/author/scripts/<filename:re:.*\.js|.*\.php>')
+@bottle.route('/post/scripts/<filename:re:.*\.js|.*\.php>')
 def index_static_script(filename):
     """定义js资源路径"""
     return bottle.static_file(filename, root=script_path)
@@ -95,7 +98,7 @@ def posts_by_tag(tag="notfound"):
     post_list = posts.get_posts_by_tag(tag, 10)
     page = "tag"
 
-    return bottle.template('template/blog_main.html', dict(myposts=post_list, username=username, page=page))
+    return bottle.template('template/blog_fliter.html', dict(myposts=post_list, username=username, page=page))
 
 
 # The main page of the blog, filtered by author
@@ -111,7 +114,7 @@ def posts_by_tag(author="notfound"):
     post_list = posts.get_posts_by_author(author)
     page = 'author'
 
-    return bottle.template('template/blog_main.html', dict(myposts=post_list, username=username, page=page))
+    return bottle.template('template/blog_fliter.html', dict(myposts=post_list, username=username, page=page))
 
 
 # Displays the form allowing a user to add a new post. Only works for logged in users
@@ -238,17 +241,17 @@ def show_post(permalink="notfound"):
         bottle.redirect("/post_not_found")
 
     # init comment form fields for additional comment
-    comment = {'name': "", 'body': "", 'email': ""}
+    response = {'name': "", 'body': "", 'email': ""}
 
-    return bottle.template("template/blog_entry.html", dict(post=post, username=username, errors="", comment=comment))
+    return bottle.template("template/blog_entry.html", dict(post=post, username=username, errors="", response=response))
 
 
 # used to process a comment on a blog post
 @bottle.post('/newcomment')
 def post_new_comment():
-    name = bottle.request.forms.get("commentName")
-    email = bottle.request.forms.get("commentEmail")
-    body = bottle.request.forms.get("commentBody")
+    name = bottle.request.forms.get("responseName")
+    email = bottle.request.forms.get("responseEmail")
+    body = bottle.request.forms.get("responseBody")
     permalink = bottle.request.forms.get("permalink")
 
     post = posts.get_post_by_permalink(permalink)
@@ -267,11 +270,11 @@ def post_new_comment():
         # user did not fill in enough information
 
         # init comment for web form
-        comment = {'name': name, 'email': email, 'body': body}
+        response = {'name': name, 'email': email, 'body': body}
 
         errors = "Post must contain your name and an actual comment."
         return bottle.template("template/blog_entry.html",
-                               dict(post=post, username=username, errors=errors, comment=comment))
+                               dict(post=post, username=username, errors=errors, response=response))
 
     else:
 

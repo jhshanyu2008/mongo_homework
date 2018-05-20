@@ -161,7 +161,7 @@ class BlogPostDAO:
     # add a comment to a particular blog post
     def add_comment(self, permalink, name, email, body):
 
-        comment = {'author': name, 'body': body}
+        comment = {'author': name, 'body': body, 'date': datetime.datetime.utcnow()}
 
         if email != "":
             comment['email'] = email

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Effe - A Blog Post</title>
+<title>Effe - Blog</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <!-- Load CSS -->
 <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -35,14 +35,14 @@
   <div id="header">
     <div id="logo"><a href="index.html"><img src="images/logo.png" width="100" height="80" alt="logo" /></a></div>
     <div id="user-menu">
-        %if (username != None):
-            <h4><a href="/logout">Logout</a> | <a href="/newpost">New Post</a></h4>
-        %else:
-            <h4><a href="/login">Login</a> | <a href="/signup">Sign Up</a></h4>
-        %end
+			%if (username != None):
+                <h4><a href="/logout">Logout</a> | <a href="/newpost">New Post</a></h4>
+            %else:
+			    <h4><a href="/login">Login</a> | <a href="/signup">Sign Up</a></h4>
+			%end
       </div>
     <div id="header-text">
-      <h4>We make a bunch of cool stuff, have a look around!</h4>
+      <h4>This is our blog, check out our latest posts!</h4>
     </div>
   </div>
 </div>
@@ -80,25 +80,20 @@
 </div>
 <!--END of menu-->
 <!--This is the START of the content-->
-<div id="content">
+<div id="content-blog">
   <!--This is the START of the blog section-->
   <div id="blog">
-    <div class="blog-item-single">
-      <h3>{{post['title']}}</h3>
-      <div class="blog-item-single-info">
-        <div class="user">
-            <a href="/author/{{post['author']}}">{{post['author']}}</a>
-            %if (username == post["author"]):
-            <a> | </a>
-            <a href="/update/{{post['permalink']}}">重新编辑</a>
-            %end
-        </div>
+    %for post in myposts:
+    <div class="blog-item">
+        <a href="/post/{{post['permalink']}}"><img class="single_image" src="images/blog/thumbs/blog1.jpg" width="280" height="180" alt="blog1" /></a>
+      <div class="blog-item-info">
+        <div class="user"><a href="/author/{{post['author']}}">{{post['author']}}</a></div>
         %if ('comments' in post):
 			%numComments = len(post['comments'])
         %else:
             %numComments = 0
 		%end
-        <div class="comments"><a href="#page-comment">{{numComments}} comments</a></div>
+        <div class="comments"><a href="/post/{{post['permalink']}}">{{numComments}}</a> comments</div>
         <div class="tags">
             %if ('tags' in post):
                 %for tag in post['tags'][0:1]:
@@ -110,57 +105,44 @@
             %end
         </div>
       </div>
-      <div class="blog-item-single-content">
-          <a class="single_image" href="images/blog/large/blog1.jpg">
-              <img src="images/blog/single/blog1.jpg" width="720" height="280" alt="blog1" /></a>
-          <p>{{!post['body']}}</p>
+      <div class="blog-item-content">
+          <a href="/post/{{post['permalink']}}"><h5>{{post['title']}}</h5></a>
+        <p>{{!post['body'][:80]}}</p>
+        <a class="readmore" href="/post/{{post['permalink']}}">read more →</a>
       </div>
-      <div id='page-comment' class="comments-block">
-        <h3 class="comments-title">Comments ({{numComments}})</h3>
-        <div class="spacer"></div>
-
-        %for comment in post['comments']:
-        <div class="comment"> <img class="avatar" alt="" src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm" width="50" height="35" />
-          <div class="comment-info"> <a class="post-author">{{comment['author']}}</a>
-            <p>{{comment['date']}}</p>
-          </div>
-          <div class="comment-body">
-            <p>{{comment['body']}}</p>
-            <a class="reply" href="#">Reply</a> </div>
-        </div>
-        <div class="spacer"></div>
-        %end
-      </div>
-      <div class="response">
-        <h3>Leave a Comment</h3>
-        <div id="comment-form" class="form">
-          <form action="/newcomment" method="POST">
-            <input type="hidden" name="permalink" , value="{{post['permalink']}}">
-            <div class="input-block">
-              <h6 class="short-label">Name*<a class="required-comment">(required)</a></h6>
-              <input class="short-field" id="name" type="text" name="responseName" value="{{response['name']}}" />
-            </div>
-            <div class="input-block">
-            <h6 class="short-label">Email*<a class="required-comment">(optional)</a></h6>
-            <input class="short-field" id="email" type="text" name="responseEmail" value="{{response['email']}}" />
-            </div>
-            <div class="input-block-long">
-            <h6 class="short-label">Web</h6>
-            <input class="long-field" id="url" type="text" placeholder="http://" name="url" value="" />
-            </div>
-            <div class="textarea-block">
-              <h6>Comments*</h6>
-              <textarea id="comment" rows="10" cols="70" name="responseBody">{{response['body']}}</textarea>
-            </div>
-            <div class="clear"></div>
-            <input id="comment-button" type="submit" value="Submit" name="submit" />
-        </form>
-        </div>
-        <div class="spacer"></div>
-
-      </div>
+    </div>
+    %end
+    <div id="pagination">
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">...</a> <a href="#">→</a>
     </div>
   </div>
   <!--END of blog section-->
+</div>
+<!--END of content-->
+<div id="slide-panel">
+	<!--This is the START of the follow section-->
+	<div id="follow">
+		<h3>Get Notified About My Newest Freebies & Upcoming Themes!</h3>
+		<h5>
+			<p>I do make some awesome freebies for you to use... All of them are FREE and pixel perfect!</p>
+			<p>Thanks for showing me the support by subscribing, and I'll try not to disappoint you...</p>
+		</h5>
+		<img class="star-divider" src="images/subscribe_divider.png" /> <a href="http://www.twitter.com/92_five">
+		<div id="follow-twitter"><img src="images/tweet_top.png" />
+			<h4>Follow me on twitter</h4>
+		</div>
+		</a><a href="http://eepurl.com/dqtGj">
+		<div id="follow-mail"><img src="images/mail_top.png" />
+			<h4>Subscribe to my newsletter</h4>
+		</div>
+		</a>
+		<h1>Thanks for that!</h1>
+	</div>
+	<!--END of follow section-->
+</div>
+</div>
 </body>
 </html>

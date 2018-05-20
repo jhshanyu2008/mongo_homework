@@ -69,11 +69,23 @@ a {
 /******************************************************************
 General CSS
 ******************************************************************/
-									
+#main-box{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 0px
+}
 #content {
 	width: 1010px;
 	padding-top: 100px;
 	margin-left: 270px;
+	z-index: 1;
+}
+#content-bolg {
+	width: 1010px;
+	padding-top: 100px;
+	margin-left: 0px;
 	z-index: 1;
 }
 p {
@@ -304,9 +316,9 @@ Header & Menu CSS
 
 #header-wrapper {
 	position: fixed;
-	background-color: #F0F8FF;
+	background-color: #FFFFFF;
 	width: 1280px;
-	height: 100px;
+	height: 80px;
 	top: 0px;
 	border-bottom: 1px;
 	border-bottom-style: solid;
@@ -319,7 +331,7 @@ Header & Menu CSS
 #logo {
 	float: left;
 	width: 100px;
-	padding: 10px 70px 10px 70px;
+	padding: 0px 70px 0px 70px;
 }
 #user-menu {
     width: 240px;
@@ -327,14 +339,14 @@ Header & Menu CSS
 	float: right;
 	display: block;
 	height: 30px;
-	padding: 35px 0px 35px 0px;
+	padding: 25px 0px 25px 0px;
 }
 #header-text {
 	width: 1280px;
 	text-align: center;
 	display: block;
 	height: 30px;
-	padding: 35px 0px 35px 0px;
+	padding: 25px 0px 25px 0px;
 }
 #header-text h6 {
 	font-size: 7pt;
@@ -776,25 +788,24 @@ Blog CSS
 
 #blog {
 	display: block;
-	width: 720px;
+	width: 1010px;
 	margin-top: 10px;
 	margin-left: auto;
-	margin-right: auto;
 	margin-bottom: 100px;
 }
 .blog-item-info {
-	padding: 10px 0 15px 0;
+	padding: 0px 0px 10px 0px;
 	height: 15px;
-	width: 400px;
+	width: 600px;
 	float: right;
 }
 .blog-item {
 	clear: both;
-	width: 720px;
+	width: 940px;
 	height: 270px;
 }
 .blog-item-content {
-	width: 400px;
+	width: 600px;
 	margin-top: 0px;
 	margin-left: 15px;
 	margin-bottom: 50px;
@@ -904,7 +915,8 @@ Blog CSS
 }
 .blog-item-single-content p {
 	text-align: left;
-	padding-bottom: 20px;
+	height:20px;
+	padding-bottom: 0px;
 }
 .social-blog-buttons {
 	display: inline;
@@ -949,10 +961,11 @@ Blog CSS
 	font-size: 10pt;
 }
 .required-comment {
-	padding-bottom: 20px;
+	padding-left: 10px;
+	color : #707070;
 }
 .short-label {
-	width: 40px;
+	width: 120px;
 }
 .input-block {
 	width: 180px;
